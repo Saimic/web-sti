@@ -1,0 +1,1509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Purple Admin</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="../../assets/images/favicon.ico" />
+  </head>
+  <body>
+
+    <div class="container-scroller">
+      <!-- partial:partials/_navbar.html -->
+      <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+        <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+          <!-- <a class="navbar-brand brand-logo" href="index.html"><img src="assets/images/logo.jfif" alt="logo" /></a> -->
+          <a class="navbar-brand brand-logo-mini" href="index.html"><img src="../../assets/images/logo-mini.svg" alt="logo" /></a>
+        </div>
+        <div class="navbar-menu-wrapper d-flex align-items-stretch">
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+            <span class="mdi mdi-menu"></span>
+          </button>
+          <div class="search-field d-none d-md-block">
+            <form class="d-flex align-items-center h-100" action="#">
+              <!-- <div class="input-group">
+                <div class="input-group-prepend bg-transparent">
+                  <i class="input-group-text border-0 mdi mdi-magnify"></i>
+                </div>
+                <input type="text" class="form-control bg-transparent border-0" placeholder="Search projects">
+              </div> -->
+            </form>
+          </div>
+          <ul class="navbar-nav navbar-nav-right">
+            <li class="nav-item nav-profile dropdown">
+              <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                <div class="nav-profile-img">
+                  <img src="../../assets/images/faces/face1.jpg" alt="image">
+                  <span class="availability-status online"></span>
+                </div>
+                <div class="nav-profile-text">
+                  <p class="mb-1 text-black">Stifle User Name</p>
+                </div>
+              </a>
+              <!-- <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
+                <a class="dropdown-item" href="#">
+                  <i class="mdi mdi-cached mr-2 text-success"></i> Activity Log </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">
+                  <i class="mdi mdi-logout mr-2 text-primary"></i> Signout </a>
+              </div> -->
+            </li>
+            <li class="nav-item d-none d-lg-block full-screen-link">
+              <a class="nav-link">
+                <i class="mdi mdi-fullscreen" id="fullscreen-button"></i>
+              </a>
+            </li>
+            <li class="nav-item dropdown">
+              <!-- <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                <i class="mdi mdi-email-outline"></i>
+                <span class="count-symbol bg-warning"></span>
+              </a> -->
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+                <h6 class="p-3 mb-0">Messages</h6>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img src="assets/images/faces/face4.jpg" alt="image" class="profile-pic">
+                  </div>
+                  <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                    <h6 class="preview-subject ellipsis mb-1 font-weight-normal">Mark send you a message</h6>
+                    <p class="text-gray mb-0"> 1 Minutes ago </p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img src="assets/images/faces/face2.jpg" alt="image" class="profile-pic">
+                  </div>
+                  <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                    <h6 class="preview-subject ellipsis mb-1 font-weight-normal">Cregh send you a message</h6>
+                    <p class="text-gray mb-0"> 15 Minutes ago </p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img src="assets/images/faces/face3.jpg" alt="image" class="profile-pic">
+                  </div>
+                  <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                    <h6 class="preview-subject ellipsis mb-1 font-weight-normal">Profile picture updated</h6>
+                    <p class="text-gray mb-0"> 18 Minutes ago </p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <h6 class="p-3 mb-0 text-center">4 new messages</h6>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <!-- <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+                <i class="mdi mdi-bell-outline"></i>
+                <span class="count-symbol bg-danger"></span>
+              </a> -->
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                <h6 class="p-3 mb-0">Notifications</h6>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-success">
+                      <i class="mdi mdi-calendar"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                    <h6 class="preview-subject font-weight-normal mb-1">Event today</h6>
+                    <p class="text-gray ellipsis mb-0"> Just a reminder that you have an event today </p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-warning">
+                      <i class="mdi mdi-settings"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                    <h6 class="preview-subject font-weight-normal mb-1">Settings</h6>
+                    <p class="text-gray ellipsis mb-0"> Update dashboard </p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-info">
+                      <i class="mdi mdi-link-variant"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                    <h6 class="preview-subject font-weight-normal mb-1">Launch Admin</h6>
+                    <p class="text-gray ellipsis mb-0"> New admin wow! </p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <h6 class="p-3 mb-0 text-center">See all notifications</h6>
+              </div>
+            </li>
+            <!-- <li class="nav-item nav-logout d-none d-lg-block">
+              <a class="nav-link" href="#">
+                <i class="mdi mdi-power"></i>
+              </a>
+            </li> -->
+            <!-- <li class="nav-item nav-settings d-none d-lg-block">
+              <a class="nav-link" href="#">
+                <i class="mdi mdi-format-line-spacing"></i>
+              </a>
+            </li> -->
+          </ul>
+          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+            <span class="mdi mdi-menu"></span>
+          </button>
+        </div>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper" >
+        <!-- partial:partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar"  >
+          <ul class="nav"  >
+
+            <li class="nav-item"   >
+              <a class="nav-link" href="../../index.html">
+                <span class="menu-title">Dashboard</span>
+              <!--   <i class="mdi mdi-home menu-icon">  </i> > -->
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                <span class="menu-title">Identification & Profiling</span>
+                <i class="menu-arrow"></i>
+                <!-- <i class="mdi mdi-crosshairs-gps menu-icon"></i> -->
+              </a>
+              <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="kyc_form.html">Individual</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="organization_ip.html">Organization</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/forms/basic_elements.html">
+                <span class="menu-title">Screening</span>
+                <!-- <i class="mdi mdi-format-list-bulleted menu-icon"></i> -->
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/charts/chartjs.html">
+                <span class="menu-title">Acceptance & Risk Rating</span>
+                <!-- <i class="mdi mdi-chart-bar menu-icon"></i> -->
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/tables/basic-table.html">
+                <span class="menu-title">Monitoring, Investigation and
+                         <br>  Reporting</span>
+                <!-- <i class="mdi mdi-table-large menu-icon"></i> -->
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="pages/tables/basic-table.html">
+                <span class="menu-title">Bulk Actions</span>
+                <!-- <i class="mdi mdi-table-large menu-icon"></i> -->
+              </a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="pages/tables/basic-table.html">
+                <span class="menu-title">Tables</span>
+                <i class="mdi mdi-table-large menu-icon"></i>
+              </a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="pages/tables/basic-table.html">
+                <span class="menu-title">Reports</span>
+                <!-- <i class="mdi mdi-table-large menu-icon"></i> -->
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/tables/basic-table.html">
+                <span class="menu-title">Admin</span>
+                <!-- <i class="mdi mdi-table-large menu-icon"></i> -->
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/login/login1.html">
+                <span class="menu-title">Log Out</span>
+                <!-- <i class="mdi mdi-table-large menu-icon"></i> -->
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="page-header">
+              <h3 class="page-title"> Identification and Profiling for Organizaion</h3>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Forms</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Organizatonal data</li>
+                </ol>
+              </nav>
+            </div>
+
+            <div class="row">
+
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-body">
+                    <!-- <h4 class="card-title">Horizontal Two column</h4> -->
+                    <form class="form-sample">
+                      <p class="card-description"> Organizaion Identification</p>
+
+
+
+
+                                  <div class="row">
+
+                                    <div class="col-md-6">
+                                      <div class="form-group row">
+                                        <label class="col-sm-3 col-form-label">Date </label>
+                                      <input type="date" id=" " name="  ">
+
+
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <div class="form-group row">
+                                        <label class="col-sm-6 col-form-label"> Customer Identification Form (CIF) Number </label>
+                                        <div class="col-sm-6">
+                                          <input type="text" class="form-control" />
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-md-12">
+                                      <div class="form-group row">
+                                        <label class="col-sm-4 col-form-label">Registeration/Incorporation Number </label>
+                                        <div class="col-sm-8">
+                                          <input type="text" class="form-control" />
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <!-- <div class="col-md-6">
+                                      <div class="form-group row">
+                                        <label class="col-sm-5 col-form-label">Expiry Date of Identity Document</label>
+                                        <div class="col-sm-7">
+                                          <input type="text" class="form-control" />
+                                        </div>
+                                      </div>
+                                    </div> -->
+
+
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-md-6">
+                                      <div class="form-group row">
+                                        <label class="col-sm-5 col-form-label">Name of Organization</label>
+                                        <div class="col-sm-7">
+                                          <input type="text" class="form-control" />
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <div class="form-group row">
+                                        <label class="col-sm-6 col-form-label">Date of Company Incorporation </label>
+                                      <input type="date" id=" " name="  ">
+
+
+                                      </div>
+                                    </div>
+
+
+                                  </div>
+
+                      <div class="row">
+
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label class="col-sm-5 col-form-label">Type of Organization</label>
+                              <div class="col-sm-5">
+                                <select id="type_of_organization" name="organization_type" style="width:200px;">
+                                  <option>select</option>
+                                  <option value="">  Club</option>
+                                    <option value="">Society</option>
+                                      <option value="">Trust</option>
+
+                                        <option value="">Registered Partnership</option>
+                                        <option value="">      Company/ Corporation</option>
+                                            <option value="">Charities</option>
+                                            <option value="">	Agents Account</option>
+                                              <option value="">NGO</option>
+
+                                              <option value="">    Unregistered Partnership</option>
+                                                <option value="">    Executors / Administrator</option>
+                                                <option value="">	         Foreign Missions / Diplomatic Offices</option>
+                                                  <option value="">  Branch liaison Office of Foreign Companies</option>
+                                                  <option value="">	        Govt Institution (Federal / Provisional / Local)</option>
+                                                    <option value="">     Association</option>
+                                                        <option value="">Others-Please specify</option>
+
+                                              <!-- <option value=" "> Public Limited</option>
+                                                <option value="">Partnership </option>
+
+                                                    <option value="">NPO</option>
+                                                    <option value="">Sole Proprietorship</option>
+                                                      <option value="">Others-Please specify</option> -->
+
+                                            </select>
+                              </div>
+                            </div>  </div>
+
+
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label class="col-sm-5 col-form-label">  Please Specify details here </label>
+                              <div class="col-sm-7">
+                                <input type="text" class="form-control" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label class="col-sm-5 col-form-label">      Account Title</label>
+                              <div class="col-sm-7">
+                                <input type="text" class="form-control" />
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-6">
+                            <div class="form-group row">
+                              <label class="col-sm-5 col-form-label"> Account Number</label>
+                              <div class="col-sm-7">
+                                <input type="text" class="form-control" />
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+                          <div class="row">
+
+                            <div class="col-md-6">
+                              <div class="form-group row">
+                                <label class="col-sm-5 col-form-label">   Branch Name</label>
+                                <div class="col-sm-7">
+                                  <input type="text" class="form-control" />
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="col-md-6">
+                              <div class="form-group row">
+                                <label class="col-sm-5 col-form-label"> Branch Code</label>
+                                <div class="col-sm-7">
+                                  <input type="text" class="form-control" />
+                                </div>
+                              </div>
+                            </div>
+                            </div>
+
+                      <div class="row">
+
+                        <!-- <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-5 col-form-label"> Registration Number<br>/Incorporation Number</label>
+                            <div class="col-sm-7">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div> -->
+
+                        <div class="col-md-12">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Registered Address</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+
+
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">District</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-5 col-form-label">Province</label>
+                            <div class="col-sm-7">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">City</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-5 col-form-label">Zip Code</label>
+                            <div class="col-sm-7">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group row">
+                            <label class="col-sm-6 col-form-label">Name of Owners/Directors/Partners/Sponsor Shareholders</label>
+                            <div class="col-sm-6">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                        <!-- <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Partners</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div> -->
+                      </div>
+
+                      <div class="row">
+
+                        <div class="col-md-12">
+                          <div class="form-group row">
+                            <label class="col-sm-6 col-form-label">   Identification Document Number of Owners/Directors/Partners/Sponsor Shareholders</label>
+                            <div class="col-sm-6">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+
+
+                        </div>
+
+
+
+
+                      <!-- <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-4 col-form-label">Sponsor Shareholders</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-4 col-form-label"> Government issued document </label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                      </div> -->
+                      <!-- <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label"> Number of Owners/ Directors/Partners </label>
+                            <div class="col-sm-6">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div> -->
+                        <!-- <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label"> </label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div> -->
+                      <!-- </div> -->
+
+
+                                            <div class="row">
+                                              <div class="col-md-12">
+                                                <div class="form-group row">
+                                                  <label class="col-sm-3 col-form-label">Customer Type</label>
+                                                  <div class="col-sm-9">
+                                                    <select id="purpose_of_account" name="poa" style="width:700px !important;">
+                                                      <option>select</option>
+                                                      <option value=" ">  NGOs, NPOs, Charitable/Religious Organization, Associations, Cubs, Socities,etc</option>
+                                                      <option value=" ">  Political Exposed Parties/ Persons(PEPs)including their close associations or relatives </option>
+                                                      <option value="">High Net worth customers with no clearly identifiable source of income, etc</option>
+                                                      <option value=" ">  Exchange Companies </option>
+                                                      <option value=" ">  Administrators, Liquidators, Agents & like customers </option>
+                                                        <option value="">Arms/ Ammunition Dealers</option>
+                                                        <option value="">High valuable/ Precious Metal Dealers (e.g.  Gold, Silver, Diamond, Ruby, Antique, etc Dealers)</option>
+                                                            <option value="">Old Auto Parts and/ or Metal Scrap Dealers</option>
+
+
+                                                      <option value=" ">  Companies having Nominee Shareholders or Shares in Bearer Form</option>
+                                                      <option value=" ">  Legal Persons or Arrangments that are Personal Assest Holding Vehicle</option>
+                                                      <option value=" ">  Correspodent Banks </option>
+
+                                                      <option value=" ">  Non Residents, Foreign Nationals</option>
+                                                      <option value=" ">  professional/Self Employed/ Proprietorship</option>
+                                                      <option value=" ">  Land Lords</option>
+
+                                                              <option value="">Housewives/ Widows/ Households</option>
+                                                                <option value="">Minors,studets,Unemployed,& like customers  </option>
+                                                                <option value="">Un-registered Partnership conerns OR Registerd Partnership Concerns Invloving business
+                                                                  e.g. Real Estate , Cicil Work, Brokage, Share Dealing, Travel/Tourism, trading of general itmes </option>
+                                                                <option value="">Investment and Comodity Advisor</option>
+                                                                <option value="">Registerd partnerships involving business not specified above</option>
+                                                                  <option value="">Salaried individual, BAFL Staff, Pension Holders and like Customers </option>
+                                                                  <option value="">Financial Insituations Regulated Supervised by SBP except Exchange Companies /Money Remitters/Change  </option>
+                                                                    <option value="">Government Entities (Local/provincal/federl) / Public Administration </option>
+
+                                                                    <option value="">Non-bank finance Companies (NBF's) Regulated /Supervised by securites and exchange commission of Pakistan(SECp) </option>
+                                                                      <option value="">Public/Private Limited/Guarantee Limited Companies </option>
+                                                                        <option value="">Foregin Government Enites OR Foregin Private Entites(that are subject to regulatory
+                                                                          disclousre requirments and whose information is publically avalible ) </option>
+
+                                                                  <option value=" ">  Lawyers</option>
+
+                                                                      <option value="">Notaries</option>
+                                                                        <option value="">Pensioners</option>
+
+                                                                            <option value="">Real-Estate Dealer/Agent</option>
+                                                                              <option value="">Retired Person</option>
+
+                                                                              <option value=" "> Salaried Individuals, SadaPay Staff and like Customers</option>
+                                                                                <option value="">Security Brokers-Dealer (Such as Shares, Mutual Funds etc.) </option>
+                                                                                  <option value="">Self Employed/ Proprietorship</option>
+                                                                                    <option value="">Student </option>
+                                                                                      <option value="">Unemployed  </option>
+                                                                                        <option value="">Widow Account </option>
+
+
+
+
+                                                                                          <option value="">All other Customers not Specified above</option>
+                                                                </select>
+                                                  </div>
+                                                </div>
+                                              </div>
+
+
+                                            </div>
+
+
+
+                                            <div class="row">
+                                              <div class="col-md-6">
+                                                <div class="form-group row">
+                                                  <label class="col-sm-5 col-form-label">Products & Services Type </label>
+                                                  <div class="col-sm-7">
+                                                    <select id="product_type" name="pt"style="width:200px;">
+                                                      <option>select</option>
+                                                      <option value=" ">  Digital Account</option>
+                                                      Transactional accounts
+
+                                                      <option value=" ">  Checking accounts</option>
+                                                      <option value=" ">  Current accounts</option>
+
+                                                      <option value=" ">  Savings accounts</option>
+                                                      <option value=" ">  Debit cards</option>
+
+                                                      <option value=" ">  ATM cards</option>
+                                                      <option value=" "> Traveler's cheques</option>
+
+                                                      <option value=" ">  Mortgages</option>
+
+                                                      <option value=" ">    Money market accounts</option>
+                                                      <option value=" ">    Individual Retirement Accounts (IRA's)</option>
+                                                      <option value=" ">      Internet Banking</option>
+                                                      <option value=" ">     Mobile Banking</option>
+
+                                                      <option value=" ">   Home equity loans</option>
+                                                      <option value=" ">   Personal loans</option>
+                                                      <option value=" ">   Sweep accounts</option>
+                                                      <option value=" ">   Certificates of deposit/Term deposits</option>
+                                                      <option value=" ">     Others </option>
+
+                                                                </select>
+                                                  </div>
+                                                </div>
+
+                                              </div>
+                                              <div class="col-md-6">
+                                                <div class="form-group row">
+                                                  <label class="col-sm-4 col-form-label">Specify Other</label>
+                                                  <div class="col-sm-8">
+                                                    <input type="text" class="form-control" />
+                                                  </div>
+                                                </div>
+                                              </div>
+
+
+                                              <!-- <div class="col-md-6">
+                                                <div class="form-group row">
+                                                  <label class="col-sm-3 col-form-label">Purpose Of Account </label>
+                                                  <div class="col-sm-9">
+                                                    <select id="purpose_of_account" name="poa">
+                                                      <option>select</option>
+                                                      <option value="AG">  Agriculture</option>
+                                                        <option value="HR">Home Remittance</option>
+                                                          <option value="PN">Pension</option>
+                                                            <option value="PS">Personal Saving</option>
+                                                              <option value="SA">Salary</option>
+                                                                <option value="STOCK">Stock/Investment</option>
+                                                                  <option value="OTHER">Other</option>
+
+                                                                </select>
+                                                  </div>
+                                                </div>
+                                              </div> -->
+
+                                            </div>
+
+
+
+                                            <div class="row">
+                                              <div class="col-md-6">
+                                                <div class="form-group row">
+                                                  <label class="col-sm-5 col-form-label">  Delivery Channels </label>
+                                                  <div class="col-sm-7">
+                                                    <select id="product_type" name="pt" style="width:200px;height:40px;">
+                                                      <option>select</option>
+                                                      <option value=" ">  Branches</option>
+
+                                                      <option value=" "> Field Officers</option>
+                                                      <option value=" ">  Automated Teller Machines (ATMs)</option>
+
+                                                      <option value=" ">   Payment Terminals</option>
+                                                      <option value=" ">          Point-of-sale-devices</option>
+
+                                                      <option value=" ">           Mobile Branches</option>
+                                                      <option value=" ">     Mobile Phones</option>
+
+                                                      <option value=" "> Wire Transfer Channel</option>
+
+                                                      <option value=" ">         Others</option>
+
+
+                                                                </select>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <div class="col-md-6">
+                                                <div class="form-group row">
+                                                  <label class="col-sm-4 col-form-label">Specify Other</label>
+                                                  <div class="col-sm-8">
+                                                    <input type="text" class="form-control" / >
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+
+
+
+
+
+
+
+
+
+                      <div class="card-body">
+                        <p class="card-description"> Politically Exposed Person (PEP)</p>
+                        <form>
+
+
+                          <div class="row">
+
+                            <div class="col-md-6">
+                              <div class="form-group row">
+
+                                <div class="col-sm-4">
+                                  <div class="form-check">
+                                    <label class="form-check-label">
+                                      <input type="radio" class="form-check-input" name=" " id="membershipRadios1" value="" checked>Yes </label>
+                                  </div>
+                                </div>
+                                <div class="col-sm-5">
+                                  <div class="form-check">
+                                    <label class="form-check-label">
+                                      <input type="radio" class="form-check-input" name=" " id="membershipRadios2" value="option2"> No</label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <label class="col-sm-6 col-form-label">
+                          Nature
+                          </label>
+                          <div class="row">
+
+                            <div class="col-md-6">
+                              <div class="form-group">
+
+
+
+                                <div class="form-check form-check-success">
+                                    <label class="form-check-label">
+                                      <input type="checkbox" class="form-check-input" checked> 	Self</label>
+                                  </div>  <div class="form-group row">
+                                      <label class="col-sm-7 col-form-label">Specify (Position /Status)</label>
+                                      <div class="col-sm-5">
+                                        <input type="text" class="form-control" />
+                                      </div>
+
+                                  </div>
+                              </div>
+                            </div>
+
+
+
+                  <div class="col-md-6">
+                  <div class="form-group">
+
+                  <div class="form-check form-check-success">
+                  <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" checked>    Linked to PEP</label>
+                  </div>
+
+                  <div class="form-group row">
+                     <label class="col-sm-5 col-form-label">Specify Relationship below field</label>
+                     <div class="col-sm-4">
+                       <input type="text" class="form-control" />
+                     </div>
+
+
+
+                  </div>
+                  </div>
+  </div>
+                        </form>
+                      </div>
+
+
+                      <div class="card-body">
+                        <p class="card-description">Purpose of Account(Could be Multiple)</p>
+                        <form>
+                          <div class="row">
+                            <div class="col-md-6">
+                              <div class="form-group">
+
+
+                                <div class="form-check form-check-success">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" checked>  Business </label>
+                                </div>
+                                <div class="form-check form-check-success">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" checked> 	Foreign Remittance</label>
+                                </div>
+                                <div class="form-check form-check-success">
+                                  <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input" checked> Agriculture Income</label>
+                                </div>
+
+                                <div class="form-group row">
+                                <label class="col-sm-6 col-form-label">If other please Specify</label>
+                                <div class="col-sm-6">
+                                <input type="text" class="form-control" />
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+
+<div class="col-md-6">
+  <div class="form-group">
+  <div class="form-check form-check-success">
+      <label class="form-check-label">
+
+
+
+
+        <input type="checkbox" class="form-check-input" checked>   Stock / Investment Income </label>
+    </div>
+  <div class="form-check form-check-success">
+      <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" checked> Government Transactions</label>
+    </div>
+    <div class="form-check form-check-success">
+      <label class="form-check-label">
+        <input type="checkbox" class="form-check-input" checked>     Charity & Donations/ Payments / Collection</label>
+    </div>
+
+        <!-- <div class="form-group row">
+          <label class="col-sm-3 col-form-label">Specify</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" />
+          </div>
+
+      </div> -->
+
+  </div>
+</div>
+          </div>
+                        </form>
+                      </div>
+
+                                            <div class="card-body">
+                                              <p class="card-description">Normal Mode of Transactions(Could be Multiple)</p>
+                                              <form>
+                                                <div class="row">
+                                                  <div class="col-md-6">
+                                                    <div class="form-group">
+
+                                                      <div class="form-check form-check-success">
+                                                        <label class="form-check-label">
+                                                          <input type="checkbox" class="form-check-input" checked>     Clearing</label>
+                                                      </div>
+                                                      <div class="form-check form-check-success">
+                                                        <label class="form-check-label">
+                                                          <input type="checkbox" class="form-check-input" checked> 	Collection</label>
+                                                      </div>
+                                                      <div class="form-check form-check-success">
+                                                        <label class="form-check-label">
+                                                          <input type="checkbox" class="form-check-input" checked>Remittance</label>
+                                                      </div>
+
+                                                      <div class="form-group row">
+                                                      <label class="col-sm-6 col-form-label">If other please Specify</label>
+                                                      <div class="col-sm-6">
+                                                      <input type="text" class="form-control" />
+                                                      </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+
+
+
+                      <div class="col-md-6">
+                        <div class="form-group">
+                        <div class="form-check form-check-success">
+                            <label class="form-check-label">
+                              <input type="checkbox" class="form-check-input" checked> Cash Deposit / Withdrawal </label>
+                          </div>
+                        <div class="form-check form-check-success">
+                            <label class="form-check-label">
+                              <input type="checkbox" class="form-check-input" checked>Cheque Deposit / Withdrawal</label>
+                          </div>
+
+                          <div class="form-check form-check-success">
+                              <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input" checked>	Online</label>
+                            </div>
+
+                              <!-- <div class="form-group row">
+                                <label class="col-sm-3 col-form-label">Specify</label>
+                                <div class="col-sm-9">
+                                  <input type="text" class="form-control" />
+                                </div>
+                              </div> -->
+
+
+                        </div>
+                      </div>
+                                  </div>
+                                              </form>
+                                            </div>
+                                            <div class="card-body">
+                                              <p class="card-description">Source of Funds</p>
+                                              <form>
+                                                <div class="row">
+                                                  <div class="col-md-6">
+                                                    <div class="form-group">
+
+                                                      <div class="form-check form-check-success">
+                                                        <label class="form-check-label">
+
+                                                          <input type="checkbox" class="form-check-input" checked>       Donations	</label>
+                                                      </div>
+                                                      <div class="form-check form-check-success">
+                                                        <label class="form-check-label">
+                                                          <input type="checkbox" class="form-check-input" checked> 			Dividends</label>
+                                                      </div>
+                                                      <div class="form-check form-check-success">
+                                                        <label class="form-check-label">
+                                                          <input type="checkbox" class="form-check-input" checked> 	Local Trading
+                                                           </label>
+                                                      </div>
+
+                                                      <div class="form-check form-check-success">
+                                                        <label class="form-check-label">
+                                                          <input type="checkbox" class="form-check-input" checked>   		Govt Funds</label>
+                                                      </div>
+                                                      <div class="form-check form-check-success">
+
+
+                                                        <label class="form-check-label">
+                                                          <input type="checkbox" class="form-check-input" checked>   Business Income	</label>
+                                                      </div>
+                                                      <div class="form-check form-check-success">
+                                                        <label class="form-check-label">
+                                                          <input type="checkbox" class="form-check-input" checked>  Rental Income</label>
+                                                      </div>
+                                                      <div class="form-check form-check-success">
+                                                        <label class="form-check-label">
+                                                          <input type="checkbox" class="form-check-input" checked>  Import / Export Proceeds</label>
+                                                      </div>
+                                                      <!-- <div class="form-check form-check-success">
+                                                        <label class="form-check-label">
+                                                          <input type="checkbox" class="form-check-input" checked>   Other Specify Below</label>
+                                                      </div> -->
+                                                      <div class="form-group row">
+                                                      <label class="col-sm-6 col-form-label">If other please Specify</label>
+                                                      <div class="col-sm-6">
+                                                      <input type="text" class="form-control" />
+                                                      </div>
+                                                      </div>
+
+                                                    </div>
+                                                  </div>
+
+
+                                            <div class="col-md-6">
+                                            <div class="form-group">
+                                            <div class="form-check form-check-success">
+                                            <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" checked>       		Real Estate</label>
+                                            </div>
+                                            <div class="form-check form-check-success">
+
+                                            <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" checked> 	Royalty Income</label>
+                                            </div>
+
+                                            <div class="form-check form-check-success">
+                                            <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" checked>		Stock Investment</label>
+                                            </div>
+                                            <div class="form-check form-check-success">
+                                            <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" checked>	   	Equity/FX</label>
+                                            </div>
+                                            <div class="form-check form-check-success">
+                                            <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" checked>	 Trading
+                                            </label>
+
+                                            </div>
+                                            <div class="form-check form-check-success">
+                                            <label class="form-check-label">
+
+
+
+                                            <input type="checkbox" class="form-check-input" checked>	Import / Export Proceeds
+                                            </label>
+                                            </div>
+                                            <div class="form-check form-check-success">
+                                            <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input" checked>	        Grant/ Relief From Other Entities</label>
+                                            </div>
+
+                                            </div>
+                                            </div>
+                                            </div>
+                                              </form>
+                                            </div>
+                                            <div class="card-body">
+                                              <p class="card-description">Expected Types of Counter Parties (Could be Multiple)</p>
+                                              <form>
+                                                <div class="row">
+                                                  <div class="col-md-6">
+                                                    <div class="form-group">
+                                                      <div class="form-check form-check-success">
+                                                        <label class="form-check-label">
+
+                                                          <input type="checkbox" class="form-check-input" checked> F.I</label>
+                                                      </div>
+                                                      <div class="form-check form-check-success">
+                                                        <label class="form-check-label">
+
+                                                          <input type="checkbox" class="form-check-input" checked>      Govt Entity	</label>
+                                                      </div>
+                                                      <div class="form-check form-check-success">
+                                                        <label class="form-check-label">
+                                                          <input type="checkbox" class="form-check-input" checked> 		 	NGO/ NPO</label>
+                                                      </div>
+                                                      <div class="form-check form-check-success">
+                                                      <label class="form-check-label">
+                                                      <input type="checkbox" class="form-check-input" checked>	    Self Employed</label>
+                                                      </div>
+
+                                                      <div class="form-group row">
+                                                      <label class="col-sm-6 col-form-label">If other , Please Specify</label>
+                                                      <div class="col-sm-6">
+                                                      <input type="text" class="form-control" />
+                                                      </div>
+                                                      </div>
+
+                                                    </div>
+                                                  </div>
+
+
+                                          <div class="col-md-6">
+                                          <div class="form-group">
+                                          <div class="form-check form-check-success">
+                                          <label class="form-check-label">
+                                          <input type="checkbox" class="form-check-input" checked>       		Partnership</label>
+                                          </div>
+                                          <div class="form-check form-check-success">
+
+                                          <label class="form-check-label">
+                                          <input type="checkbox" class="form-check-input" checked>   Limited Company</label>
+                                          </div>
+                                          <div class="form-check form-check-success">
+
+                                          <label class="form-check-label">
+                                          <input type="checkbox" class="form-check-input" checked> Proprietorship</label>
+                                          </div>
+
+
+
+                                          </div>
+                                          </div>
+                                          </div>
+                                              </form>
+                                            </div>
+                                            <p class="card-description">  Expected Monthly Turnover</p>
+
+
+                                        <div class="row">
+
+                                          <div class="col-md-6">
+                                            <div class="form-group row">
+                                              <label class="col-sm-3 col-form-label">  No. of Debit Transactions</label>
+                                              <div class="col-sm-9">
+                                                <input type="text" class="form-control" />
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                            <div class="form-group row">
+                                              <label class="col-sm-6 col-form-label">Equivalent Amount of Debit Transactions (000)</label>
+                                              <div class="col-sm-6">
+                                                <input type="text" class="form-control" />
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="row">
+
+                                          <div class="col-md-6">
+                                            <div class="form-group row">
+                                              <label class="col-sm-3 col-form-label">      No. of Credit
+                                                  Transactions</label>
+                                              <div class="col-sm-9">
+                                                <input type="text" class="form-control" />
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-md-6">
+                                            <div class="form-group row">
+                                              <label class="col-sm-6 col-form-label"> Equivalent Amount of Credit Transactions (000))</label>
+                                              <div class="col-sm-6">
+                                                <input type="text" class="form-control" />
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+
+
+                                            <div class="row">
+
+                                                                    <div class="col-md-6">
+                                                                        <div class="form-group row">
+                                                                          <label class="col-sm-4 col-form-label">Beneficial Ownership</label>
+                                                                          <div class="col-sm-4">
+                                                                            <div class="form-check">
+                                                                              <label class="form-check-label">
+                                                                                <input type="radio" class="form-check-input" name=" " id="membershipRadios1" value="" checked>Self </label>
+                                                                            </div>
+                                                                          </div>
+                                                                          <div class="col-sm-4">
+                                                                            <div class="form-check">
+                                                                              <label class="form-check-label">
+                                                                                <input type="radio" class="form-check-input" name=" " id="membershipRadios2" value="option2"> Other</label>
+                                                                            </div>
+                                                                          </div>
+                                                                        </div>
+                                                                      </div>
+
+                                            </div>
+
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+
+            <!-- <div class="page-header">
+              <h3 class="page-title"> Vessel data</h3>
+
+            </div>
+
+            <div class="row">
+
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Horizontal Two column</h4>
+                    <form class="form-sample">
+                      <p class="card-description"> Vessel Information</p>
+
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label">Vessel Name</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group row">
+                            <label class="col-sm-3 col-form-label"> Vessel IMO Number </label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                                            <div class="row">
+                                              <div class="col-md-6">
+                                                <div class="form-group row">
+                                                  <label class="col-sm-4 col-form-label">Vessel Country of Origin</label>
+                                                  <div class="col-sm-8">
+                                                    <select id="country" name="country">
+                              <option>select country</option>
+                              <option value="AF">Afghanistan</option>
+                              <option value="AX">Aland Islands</option>
+                              <option value="AL">Albania</option>
+                              <option value="DZ">Algeria</option>
+                              <option value="AS">American Samoa</option>
+                              <option value="AD">Andorra</option>
+                              <option value="AO">Angola</option>
+                              <option value="AI">Anguilla</option>
+                              <option value="AQ">Antarctica</option>
+                              <option value="AG">Antigua and Barbuda</option>
+                              <option value="AR">Argentina</option>
+                              <option value="AM">Armenia</option>
+                              <option value="AW">Aruba</option>
+                              <option value="AU">Australia</option>
+                              <option value="AT">Austria</option>
+                              <option value="AZ">Azerbaijan</option>
+                              <option value="BS">Bahamas</option>
+                              <option value="BH">Bahrain</option>
+                              <option value="BD">Bangladesh</option>
+                              <option value="BB">Barbados</option>
+                              <option value="BY">Belarus</option>
+                              <option value="BE">Belgium</option>
+                              <option value="BZ">Belize</option>
+                              <option value="BJ">Benin</option>
+                              <option value="BM">Bermuda</option>
+                              <option value="BT">Bhutan</option>
+                              <option value="BO">Bolivia</option>
+                              <option value="BQ">Bonaire, Sint Eustatius and Saba</option>
+                              <option value="BA">Bosnia and Herzegovina</option>
+                              <option value="BW">Botswana</option>
+                              <option value="BV">Bouvet Island</option>
+                              <option value="BR">Brazil</option>
+                              <option value="IO">British Indian Ocean Territory</option>
+                              <option value="BN">Brunei Darussalam</option>
+                              <option value="BG">Bulgaria</option>
+                              <option value="BF">Burkina Faso</option>
+                              <option value="BI">Burundi</option>
+                              <option value="KH">Cambodia</option>
+                              <option value="CM">Cameroon</option>
+                              <option value="CA">Canada</option>
+                              <option value="CV">Cape Verde</option>
+                              <option value="KY">Cayman Islands</option>
+                              <option value="CF">Central African Republic</option>
+                              <option value="TD">Chad</option>
+                              <option value="CL">Chile</option>
+                              <option value="CN">China</option>
+                              <option value="CX">Christmas Island</option>
+                              <option value="CC">Cocos (Keeling) Islands</option>
+                              <option value="CO">Colombia</option>
+                              <option value="KM">Comoros</option>
+                              <option value="CG">Congo</option>
+                              <option value="CD">Congo</option>
+                              <option value="CK">Cook Islands</option>
+                              <option value="CR">Costa Rica</option>
+                              <option value="CI">Cote D'Ivoire</option>
+                              <option value="HR">Croatia</option>
+                              <option value="CU">Cuba</option>
+                              <option value="CW">Curacao</option>
+                              <option value="CY">Cyprus</option>
+                              <option value="CZ">Czech Republic</option>
+                              <option value="DK">Denmark</option>
+                              <option value="DJ">Djibouti</option>
+                              <option value="DM">Dominica</option>
+                              <option value="DO">Dominican Republic</option>
+                              <option value="EC">Ecuador</option>
+                              <option value="EG">Egypt</option>
+                              <option value="SV">El Salvador</option>
+                              <option value="GQ">Equatorial Guinea</option>
+                              <option value="ER">Eritrea</option>
+                              <option value="EE">Estonia</option>
+                              <option value="ET">Ethiopia</option>
+                              <option value="FK">Falkland Islands (Malvinas)</option>
+                              <option value="FO">Faroe Islands</option>
+                              <option value="FJ">Fiji</option>
+                              <option value="FI">Finland</option>
+                              <option value="FR">France</option>
+                              <option value="GF">French Guiana</option>
+                              <option value="PF">French Polynesia</option>
+                              <option value="TF">French Southern Territories</option>
+                              <option value="GA">Gabon</option>
+                              <option value="GM">Gambia</option>
+                              <option value="GE">Georgia</option>
+                              <option value="DE">Germany</option>
+                              <option value="GH">Ghana</option>
+                              <option value="GI">Gibraltar</option>
+                              <option value="GR">Greece</option>
+                              <option value="GL">Greenland</option>
+                              <option value="GD">Grenada</option>
+                              <option value="GP">Guadeloupe</option>
+                              <option value="GU">Guam</option>
+                              <option value="GT">Guatemala</option>
+                              <option value="GG">Guernsey</option>
+                              <option value="GN">Guinea</option>
+                              <option value="GW">Guinea-Bissau</option>
+                              <option value="GY">Guyana</option>
+                              <option value="HT">Haiti</option>
+                              <option value="HM">Heard Island and Mcdonald Islands</option>
+                              <option value="VA">Holy See (Vatican City State)</option>
+                              <option value="HN">Honduras</option>
+                              <option value="HK">Hong Kong</option>
+                              <option value="HU">Hungary</option>
+                              <option value="IS">Iceland</option>
+                              <option value="IN">India</option>
+                              <option value="ID">Indonesia</option>
+                              <option value="IR">Iran</option>
+                              <option value="IQ">Iraq</option>
+                              <option value="IE">Ireland</option>
+                              <option value="IM">Isle of Man</option>
+                              <option value="IL">Israel</option>
+                              <option value="IT">Italy</option>
+                              <option value="JM">Jamaica</option>
+                              <option value="JP">Japan</option>
+                              <option value="JE">Jersey</option>
+                              <option value="JO">Jordan</option>
+                              <option value="KZ">Kazakhstan</option>
+                              <option value="KE">Kenya</option>
+                              <option value="KI">Kiribati</option>
+
+                              <option value="KR">Korea, Republic of</option>
+                              <option value="XK">Kosovo</option>
+                              <option value="KW">Kuwait</option>
+                              <option value="KG">Kyrgyzstan</option>
+
+                              <option value="LV">Latvia</option>
+                              <option value="LB">Lebanon</option>
+                              <option value="LS">Lesotho</option>
+                              <option value="LR">Liberia</option>
+                              <option value="LY">Libyan Arab Jamahiriya</option>
+                              <option value="LI">Liechtenstein</option>
+                              <option value="LT">Lithuania</option>
+                              <option value="LU">Luxembourg</option>
+                              <option value="MO">Macao</option>
+
+                              <option value="MG">Madagascar</option>
+                              <option value="MW">Malawi</option>
+                              <option value="MY">Malaysia</option>
+                              <option value="MV">Maldives</option>
+                              <option value="ML">Mali</option>
+                              <option value="MT">Malta</option>
+                              <option value="MH">Marshall Islands</option>
+                              <option value="MQ">Martinique</option>
+                              <option value="MR">Mauritania</option>
+                              <option value="MU">Mauritius</option>
+                              <option value="YT">Mayotte</option>
+                              <option value="MX">Mexico</option>
+
+                              <option value="MD">Moldova, Republic of</option>
+                              <option value="MC">Monaco</option>
+                              <option value="MN">Mongolia</option>
+                              <option value="ME">Montenegro</option>
+                              <option value="MS">Montserrat</option>
+                              <option value="MA">Morocco</option>
+                              <option value="MZ">Mozambique</option>
+                              <option value="MM">Myanmar</option>
+                              <option value="NA">Namibia</option>
+                              <option value="NR">Nauru</option>
+                              <option value="NP">Nepal</option>
+                              <option value="NL">Netherlands</option>
+                              <option value="AN">Netherlands Antilles</option>
+                              <option value="NC">New Caledonia</option>
+                              <option value="NZ">New Zealand</option>
+                              <option value="NI">Nicaragua</option>
+                              <option value="NE">Niger</option>
+                              <option value="NG">Nigeria</option>
+                              <option value="NU">Niue</option>
+                              <option value="NF">Norfolk Island</option>
+                              <option value="MP">Northern Mariana Islands</option>
+                              <option value="NO">Norway</option>
+                              <option value="OM">Oman</option>
+                              <option value="PK">Pakistan</option>
+                              <option value="PW">Palau</option>
+                              <option value="PS">Palestinian Territory, Occupied</option>
+                              <option value="PA">Panama</option>
+                              <option value="PG">Papua New Guinea</option>
+                              <option value="PY">Paraguay</option>
+                              <option value="PE">Peru</option>
+                              <option value="PH">Philippines</option>
+                              <option value="PN">Pitcairn</option>
+                              <option value="PL">Poland</option>
+                              <option value="PT">Portugal</option>
+                              <option value="PR">Puerto Rico</option>
+                              <option value="QA">Qatar</option>
+                              <option value="RE">Reunion</option>
+                              <option value="RO">Romania</option>
+                              <option value="RU">Russian Federation</option>
+                              <option value="RW">Rwanda</option>
+                              <option value="BL">Saint Barthelemy</option>
+                              <option value="SH">Saint Helena</option>
+                              <option value="KN">Saint Kitts and Nevis</option>
+                              <option value="LC">Saint Lucia</option>
+                              <option value="MF">Saint Martin</option>
+                              <option value="PM">Saint Pierre and Miquelon</option>
+
+                              <option value="WS">Samoa</option>
+                              <option value="SM">San Marino</option>
+                              <option value="ST">Sao Tome and Principe</option>
+                              <option value="SA">Saudi Arabia</option>
+                              <option value="SN">Senegal</option>
+                              <option value="RS">Serbia</option>
+                              <option value="CS">Serbia and Montenegro</option>
+                              <option value="SC">Seychelles</option>
+                              <option value="SL">Sierra Leone</option>
+                              <option value="SG">Singapore</option>
+                              <option value="SX">Sint Maarten</option>
+                              <option value="SK">Slovakia</option>
+                              <option value="SI">Slovenia</option>
+                              <option value="SB">Solomon Islands</option>
+                              <option value="SO">Somalia</option>
+                              <option value="ZA">South Africa</option>
+
+                              <option value="SS">South Sudan</option>
+                              <option value="ES">Spain</option>
+                              <option value="LK">Sri Lanka</option>
+                              <option value="SD">Sudan</option>
+                              <option value="SR">Suriname</option>
+                              <option value="SJ">Svalbard and Jan Mayen</option>
+                              <option value="SZ">Swaziland</option>
+                              <option value="SE">Sweden</option>
+                              <option value="CH">Switzerland</option>
+                              <option value="SY">Syrian Arab Republic</option>
+                              <option value="TW">Taiwan, Province of China</option>
+                              <option value="TJ">Tajikistan</option>
+                              <option value="TZ">Tanzania, United Republic of</option>
+                              <option value="TH">Thailand</option>
+                              <option value="TL">Timor-Leste</option>
+                              <option value="TG">Togo</option>
+                              <option value="TK">Tokelau</option>
+                              <option value="TO">Tonga</option>
+                              <option value="TT">Trinidad and Tobago</option>
+                              <option value="TN">Tunisia</option>
+                              <option value="TR">Turkey</option>
+                              <option value="TM">Turkmenistan</option>
+                              <option value="TC">Turks and Caicos Islands</option>
+                              <option value="TV">Tuvalu</option>
+                              <option value="UG">Uganda</option>
+                              <option value="UA">Ukraine</option>
+                              <option value="AE">United Arab Emirates</option>
+                              <option value="GB">United Kingdom</option>
+                              <option value="US">United States</option>
+
+                              <option value="UY">Uruguay</option>
+                              <option value="UZ">Uzbekistan</option>
+                              <option value="VU">Vanuatu</option>
+                              <option value="VE">Venezuela</option>
+                              <option value="VN">Viet Nam</option>
+                              <option value="VG">Virgin Islands, British</option>
+                              <option value="VI">Virgin Islands, U.s.</option>
+                              <option value="WF">Wallis and Futuna</option>
+                              <option value="EH">Western Sahara</option>
+                              <option value="YE">Yemen</option>
+                              <option value="ZM">Zambia</option>
+                              <option value="ZW">Zimbabwe</option>
+                          </select>
+                                                  </div>
+                                                </div>
+                                              </div>
+
+                                            </div>
+
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:../../partials/_footer.html -->
+          <!-- <footer class="footer">
+            <div class="container-fluid clearfix">
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
+              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin templates </a> from Bootstrapdash.com</span>
+            </div>
+          </footer> -->
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="../../assets/js/off-canvas.js"></script>
+    <script src="../../assets/js/hoverable-collapse.js"></script>
+    <script src="../../assets/js/misc.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="../../assets/js/file-upload.js"></script>
+    <!-- End custom js for this page -->
+  </body>
+</html>

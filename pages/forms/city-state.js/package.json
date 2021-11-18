@@ -1,0 +1,64 @@
+{
+  "name": "city-state",
+  "version": "2.0.2",
+  "description": "Observable and encapsulated state management",
+  "main": "build/index.js",
+  "directories": {
+    "src": "src",
+    "build": "build",
+    "test": "test"
+  },
+  "dependencies": {
+    "symbol-observable": "^1.2.0",
+    "with-subscribe": "^2.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-decorators": "^7.1.2",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "async-msleep": "^1.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "babel-loader": "^8.0.4",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.6.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.3.2",
+    "redux": "^4.0.0",
+    "rxjs": "6.5.2",
+    "rxjs-compat": "6.5.2",
+    "standard": "^11.0.1",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:all": "jest && npm run lint",
+    "type": "flow check",
+    "flow": "flow",
+    "start": "webpack --mode development",
+    "start:dev": "webpack-dev-server -d",
+    "build": "babel src -d build",
+    "lint": "standard --fix 'lib/*.js' 'examples/index.js'",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caiogondim/city-state.js.git"
+  },
+  "author": "Caio Gondim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/caiogondim/city-state.js/issues"
+  },
+  "homepage": "https://github.com/caiogondim/city-state.js#readme",
+  "standard": {
+    "parser": "babel-eslint"
+  }
+}
